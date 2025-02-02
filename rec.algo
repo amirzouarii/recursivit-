@@ -1,0 +1,49 @@
+function ticket(age){
+    if(age <=10){
+        return 10;
+
+    }
+    else if(age <=17){
+        return 15;
+    }
+    else {
+        return 20;
+    }
+}
+
+function bissectile(annee){
+    if(annee % 4 == 0 && annee % 100 != 0 || annee % 400 == 0){
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+
+
+
+// ****************************************************
+
+
+function fibonacci(n){
+    if(n==0){
+        return 0;
+    }
+    else if(n==1){
+        return 1;
+    }
+    else{
+        return fibonacci(n-1) + fibonacci(n-2);
+    }
+}
+
+
+function palindrome(ch){
+    var ch1 = ch.split("").reverse().join("");
+    if(ch1 == ch){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
